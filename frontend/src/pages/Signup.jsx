@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Heading from "../components/Heading";
-import SubHeading from "../components/SubHeading";
-import InputBox from "../components/InputBox";
-import Button from "../Components/Button";
-import BottomWarning from "../components/BottomWarning";
+import Heading from "../components/Heading.jsx";
+import SubHeading from "../components/SubHeading.jsx";
+import InputBox from "../components/InputBox.jsx";
+import Button from "../Components/Button.jsx";
+import BottomWarning from "../components/BottomWarning.jsx";
 import { signup } from "../services/operations/authAPI";
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
