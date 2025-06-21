@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading";
+import Heading from "../components/Heading.jsx";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { sendMoney } from "../services/operations/transactionAPI";
 import { useRecoilValue } from "recoil";

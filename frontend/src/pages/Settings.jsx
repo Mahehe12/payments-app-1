@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading";
-import SubHeading from "../components/SubHeading";
-import InputBox from "../components/InputBox";
+import Heading from "../components/Heading.jsx";
+import SubHeading from "../components/SubHeading.jsx";
+import InputBox from "../components/InputBox.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import Button from "../components/Button";
