@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HeadingTop from "../components/HeadingTop.jsx";
+// import HeadingTop from "../components/HeadingTop.jsx";
 import SubHeading from "../components/SubHeading.jsx";
 import InputBox from "../components/InputBox.jsx";
 import Button from "../components/Button.jsx";
