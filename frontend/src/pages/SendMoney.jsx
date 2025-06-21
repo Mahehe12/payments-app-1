@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { sendMoney } from "../services/operations/transactionAPI";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
-import Appbar from "../components/NavBar.jsx";
+import NavBar from "../components/NavBar.jsx";
 
 const SendMoney = () => {
   const [searchParams] = useSearchParams();
@@ -36,7 +36,7 @@ const SendMoney = () => {
 
   return (
     <div>
-      <Appbar user={user.firstName} />
+      <NavBar user={user.firstName} />
       <div className="h-screen bg-slate-300 flex justify-center items-center">
         <div className="bg-white rounded-lg w-[80%] sm:w-[50%] lg:w-[23%] text-center p-6">
           <div className="flex flex-col">
