@@ -48,6 +48,8 @@ exports.searchFriend = async (req, res) => {
     });
 };
 
+
+
 // get current user 
 exports.getCurrentUser = async (req, res) => {
     try {

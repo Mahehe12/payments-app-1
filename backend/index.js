@@ -5,7 +5,7 @@ const userRoutes = require("./routes/userRoutes");
 const accountRoutes = require("./routes/accountRoutes");
 
 app.use(cors({
-  origin: "*", // Your frontend URL
+  origin: "*", // frontend URL
   credentials: true
 }));
 // Cross-origin resource sharing (CORS) is needed for authorized resource sharing with external third parties.

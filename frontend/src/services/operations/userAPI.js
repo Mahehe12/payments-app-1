@@ -5,7 +5,7 @@ export const getUsers = async (token, filter) => {
   try {
     const response = await apiConnector(
       "GET",
-      `${BASE_URL}/user/bulk`,
+      `${BASE_URL}user/bulk`,
       null,
       { Authorization: `Bearer ${token}` },
       { filter: filter }
@@ -28,7 +28,7 @@ export const getCurrentUser = async (token) => {
   try {
     const response = await apiConnector(
       "GET",
-      `${BASE_URL}/user/getCurrentUser`,
+      `${BASE_URL}user/getCurrentUser`,
       null,
       { Authorization: `Bearer ${token}` }
     );
@@ -47,7 +47,7 @@ export const updateCredentials = async (token, updatedData) => {
   try {
     const response = await apiConnector(
       "PUT",
-      `${BASE_URL}/user/`,
+      `${BASE_URL}user/`,
       updatedData,
       { Authorization: `Bearer ${token}` }
     );
