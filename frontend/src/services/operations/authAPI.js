@@ -3,7 +3,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const signup = async (firstName, lastName, username, password) => {
   try {
-    const response = await apiConnector("POST", `${BASE_URL}user/signup`, {
+    const response = await apiConnector("POST", `${BASE_URL}/user/signup`, {
       firstName: firstName,
       lastName: lastName,
       username: username,
@@ -28,7 +28,7 @@ export const signup = async (firstName, lastName, username, password) => {
 
 export const signin = async (username, password) => {
   try {
-    const response = await apiConnector("POST", `${BASE_URL}user/signin`, {
+    const response = await apiConnector("POST", `${BASE_URL}/user/signin`, {
       username: username,
       password,
     });

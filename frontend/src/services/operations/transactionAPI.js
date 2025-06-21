@@ -5,7 +5,7 @@ export const getBalance = async (token) => {
   try {
     const response = await apiConnector(
       "GET",
-      `${BASE_URL}account/balance`,
+      `${BASE_URL}/account/balance`,
       null,
       {
         Authorization: `Bearer ${token}`,
@@ -26,7 +26,7 @@ export const sendMoney = async (amount, to, token) => {
   try {
     const response = await apiConnector(
       "POST",
-      `${BASE_URL}account/transfer`,
+      `${BASE_URL}/account/transfer`,
       { amount, to },
       { Authorization: `Bearer ${token}` }
     );
