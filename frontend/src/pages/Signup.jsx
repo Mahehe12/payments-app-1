@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Heading from "../components/Heading.jsx";
 import SubHeading from "../components/SubHeading.jsx";
 import InputBox from "../components/InputBox.jsx";
-import Button from "../Components/Button.jsx";
+import Button from "../components/Button.jsx";
 import BottomWarning from "../components/BottomWarning.jsx";
 import { signup } from "../services/operations/authAPI";
 import { useNavigate } from "react-router-dom";
