@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-=======
-# Ignore environment variables
-**/.env
-
-# Ignore node_modules
-**/node_modules/
-
-.vercel
-
->>>>>>> 454f022a19a620e3d13ca445159390c0cbd06f9a
 # Logs
 logs
 *.log
