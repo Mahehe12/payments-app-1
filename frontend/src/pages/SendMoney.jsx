@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { sendMoney } from "../services/operations/transactionAPI";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
-import Appbar from "../components/Appbar";
+import Appbar from "../components/NavBar.jsx";
 
 const SendMoney = () => {
   const [searchParams] = useSearchParams();

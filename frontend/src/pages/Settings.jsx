@@ -6,7 +6,7 @@ import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import Button from "../components/Button";
 import { updateCredentials } from "../services/operations/userAPI";
-import Appbar from "../components/Appbar";
+import Appbar from "../components/NavBar.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Settings = () => {

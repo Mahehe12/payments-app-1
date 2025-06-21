@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Appbar from "../components/Appbar.jsx";
+import NavBar from "../components/NavBar.jsx";
 import Balance from "../components/Balance.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";

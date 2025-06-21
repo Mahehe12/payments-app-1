@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import Dropdown from "./Dropdown";
 
-const Appbar = ({ user }) => {
+const NavBar = ({ user }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full relative flex justify-between items-center shadow px-4 sm:px-14">
@@ -25,4 +25,4 @@ const Appbar = ({ user }) => {
   );
 };
 
-export default Appbar;
+export default NavBar;
