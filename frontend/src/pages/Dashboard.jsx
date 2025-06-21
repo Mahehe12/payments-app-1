@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../components/NavBar.jsx";
+import Bar from "../components/Bar.jsx";
 import Balance from "../components/Balance.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <NavBar user={user.firstName} />
+      <Bar user={user.firstName} />
       <Balance balance={balance} />
       <Users />
     </div>

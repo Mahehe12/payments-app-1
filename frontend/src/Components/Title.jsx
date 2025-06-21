@@ -1,7 +1,7 @@
 import React from "react";
 
-const HeadingTop = ({ label }) => {
+const Title = ({ label }) => {
   return <div className="font-bold text-4xl pt-6">{label}</div>;
 };
 
-export default HeadingTop;
+export default Title;
