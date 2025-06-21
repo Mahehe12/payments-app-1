@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <Appbar user={user.firstName} />
+      <NavBar user={user.firstName} />
       <Balance balance={balance} />
       <Users />
     </div>

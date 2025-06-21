@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading.jsx";
+import HeadingTop from "../components/HeadingTop.jsx";
 import SubHeading from "../components/SubHeading.jsx";
 import InputBox from "../components/InputBox.jsx";
 import { useRecoilValue } from "recoil";
@@ -56,7 +56,7 @@ const Settings = () => {
       <div className="bg-slate-300 h-screen flex justify-center items-center">
         <div className="bg-white rounded-lg w-[80%] sm:w-[50%] lg:w-[23%] text-center p-3">
           <div className="flex flex-col">
-            <Heading label={"Update credentials"} />
+            <HeadingTop label={"Update credentials"} />
             <SubHeading
               label={"Enter the information that you want to update"}
             />
