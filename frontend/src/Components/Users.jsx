@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
-import { getCurrentUser, getUsers } from "../services/operations/userApi";
+import { getCurrentUser, getUsers } from "../services/operations/userAPI";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import { useNavigate } from "react-router-dom";

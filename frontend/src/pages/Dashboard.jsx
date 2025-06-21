@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Bar from "../components/Bar.jsx";
 import Balance from "../components/Balance.jsx";
+import { Users } from "../components/Users.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import { getBalance } from "../services/operations/transactionAPI";
-import { Users } from "../components/Users";
 
 const Dashboard = () => {
   const [balance, setBalance] = useState("");

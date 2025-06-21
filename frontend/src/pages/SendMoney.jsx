@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Title from "../components/Title.jsx";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { sendMoney } from "../services/operations/transactionAPI";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import Bar from "../components/Bar.jsx";
+import Title from "../components/Title.jsx";
 
 const SendMoney = () => {
   const [searchParams] = useSearchParams();
