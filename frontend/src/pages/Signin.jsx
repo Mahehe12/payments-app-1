@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Heading from "../components/Heading";
 import SubHeading from "../components/SubHeading";
 import InputBox from "../components/InputBox";
-import Button from "../Components/Button";
+import Button from "../components/Button";
 import BottomWarning from "../components/BottomWarning";
 import { useNavigate } from "react-router-dom";
 import { signin } from "../services/operations/authAPI";

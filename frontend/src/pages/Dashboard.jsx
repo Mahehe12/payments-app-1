@@ -4,7 +4,7 @@ import Balance from "../components/Balance";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import { getBalance } from "../services/operations/transactionAPI";
-import { Users } from "../Components/Users";
+import { Users } from "../components/Users";
 
 const Dashboard = () => {
   const [balance, setBalance] = useState("");
