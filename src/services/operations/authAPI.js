@@ -1,6 +1,5 @@
 import { apiConnector } from "../apiConnector";
-
-const BASE_URL = import.meta.env.VITE_API_URL || "https://payments-app-zigd.onrender.com/api/v1";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const signup = async (firstName, lastName, username, password) => {
   try {

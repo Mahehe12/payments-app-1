@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading";
-import SubHeading from "../components/SubHeading";
-import InputBox from "../components/InputBox";
-import Button from "../components/Button";
-import BottomWarning from "../components/BottomWarning";
+import Title from "../components/Title.jsx";
+import SubHeading from "../components/SubHeading.jsx";
+import InputBox from "../components/InputBox.jsx";
+import Button from "../components/Button.jsx";
+import BottomWarning from "../components/BottomWarning.jsx";
 import { useNavigate } from "react-router-dom";
 import { signin } from "../services/operations/authAPI";
 import { useSetRecoilState } from "recoil";
@@ -44,7 +44,7 @@ const Signin = () => {
     <div className="h-screen bg-slate-300 flex justify-center items-center">
       <div className="bg-white rounded-lg w-[80%] sm:w-[50%] lg:w-[23%] text-center p-3">
         <div className="flex flex-col">
-          <Heading label={"Sign in"} />
+          <Title label={"Sign in"} />
           <SubHeading label={"Enter your credentials to access your account"} />
           <InputBox
             label={"Email"}
@@ -52,7 +52,7 @@ const Signin = () => {
             onChange={changeHandler}
             name="username"
             value={formData.username}
-            autoComplete="off"
+            autocomplete="off"
           />
           <InputBox
             label={"Password"}
@@ -60,7 +60,7 @@ const Signin = () => {
             onChange={changeHandler}
             name="password"
             value={formData.password}
-            autoComplete="off"
+            autocomplete="off"
           />
           <Button label={"Sign in"} onClick={hanldeClick} />
           <BottomWarning

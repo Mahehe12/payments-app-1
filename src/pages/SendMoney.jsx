@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { sendMoney } from "../services/operations/transactionAPI";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
-import Appbar from "../components/Appbar";
+import Bar from "../components/Bar.jsx";
+import Title from "../components/Title.jsx";
 
 const SendMoney = () => {
   const [searchParams] = useSearchParams();
@@ -36,11 +36,11 @@ const SendMoney = () => {
 
   return (
     <div>
-      <Appbar user={user.firstName} />
+      <Bar user={user.firstName} />
       <div className="h-screen bg-slate-300 flex justify-center items-center">
         <div className="bg-white rounded-lg w-[80%] sm:w-[50%] lg:w-[23%] text-center p-6">
           <div className="flex flex-col">
-            <Heading label={"Send Money"} />
+            <Title label={"Send Money"} />
             <div className="flex items-center mt-10">
               <div className="flex justify-center items-center w-12 h-12 bg-green-400 rounded-full">
                 <img

@@ -3,7 +3,7 @@ import { useRecoilValue } from "recoil";
 import { tokenAtom } from "../../store/atoms";
 import { Navigate } from "react-router-dom";
 
-const PrivateRoute = ({ children }) => {
+const PrivateRourte = ({ children }) => {
   const token = useRecoilValue(tokenAtom);
 
   if (token !== null) {
@@ -13,4 +13,4 @@ const PrivateRoute = ({ children }) => {
   }
 };
 
-export default PrivateRoute;
+export default PrivateRourte;

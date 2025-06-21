@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Appbar from "../components/Appbar.jsx";
+import Bar from "../components/Bar.jsx";
 import Balance from "../components/Balance.jsx";
+import { Users } from "../components/Users.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
 import { getBalance } from "../services/operations/transactionAPI";
-import { Users } from "../components/Users.jsx"
 
 const Dashboard = () => {
   const [balance, setBalance] = useState("");
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <Appbar user={user.firstName} />
+      <Bar user={user.firstName} />
       <Balance balance={balance} />
       <Users />
     </div>

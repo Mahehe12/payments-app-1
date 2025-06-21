@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Heading from "../components/Heading";
-import SubHeading from "../components/SubHeading";
-import InputBox from "../components/InputBox";
+import Bar from "../components/Bar.jsx";
+import Title from "../components/Title.jsx";
+import SubHeading from "../components/SubHeading.jsx";
+import InputBox from "../components/InputBox.jsx";
+import Button from "../components/Button.jsx";
 import { useRecoilValue } from "recoil";
 import { tokenAtom, userAtom } from "../store/atoms";
-import Button from "../components/Button";
-import { updateCredentials } from "../services/operations/userAPI"
-import Appbar from "../components/Appbar";
+import { updateCredentials } from "../services/operations/userAPI";
 import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
@@ -52,11 +52,11 @@ const Settings = () => {
 
   return (
     <div>
-      <Appbar user={user.firstName} />
+      <Bar user={user.firstName} />
       <div className="bg-slate-300 h-screen flex justify-center items-center">
         <div className="bg-white rounded-lg w-[80%] sm:w-[50%] lg:w-[23%] text-center p-3">
           <div className="flex flex-col">
-            <Heading label={"Update credentials"} />
+            <Title label={"Update credentials"} />
             <SubHeading
               label={"Enter the information that you want to update"}
             />
