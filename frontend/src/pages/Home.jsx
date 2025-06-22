@@ -7,7 +7,7 @@ function Home() {
         <div className='h-screen flex flex-col bg-gradient-to-b from-white to-slate-100'>
             <header className='w-full flex justify-between items-center shadow-lg px-4 sm:px-14 py-6 bg-white sticky top-0 z-50'>
                 <div className='text-2xl sm:text-3xl font-extrabold text-blue-600 tracking-tight'>
-                    PayTM App
+                    Payments App
                 </div>
                 <div className='flex justify-between items-center gap-4'>
                     <button
@@ -25,7 +25,7 @@ function Home() {
 
             <main className='flex-grow bg-gradient-to-b from-slate-100 to-slate-200 flex flex-col justify-center items-center text-center px-6 sm:px-8 md:px-16'>
                 <h1 className='font-bold text-3xl sm:text-4xl md:text-5xl mb-6 text-gray-800 tracking-tight leading-tight'>
-                    Welcome to <span className='text-blue-600'>PayTM App</span>
+                    Welcome to <span className='text-blue-600'>Payments App</span>
                 </h1>
                 <p className='text-xl sm:text-2xl mb-6 text-gray-700 font-medium max-w-2xl leading-relaxed'>
                     Payments made simple, secure, and seamless
@@ -38,7 +38,7 @@ function Home() {
 
             <footer className='w-full bg-white py-6 flex justify-center items-center shadow-inner'>
                 <div className='text-sm sm:text-base text-gray-600 font-medium'>
-                    © 2024 PayTM App. All rights reserved.
+                    © 2024 Payments App. All rights reserved.
                 </div>
             </footer>
         </div>
