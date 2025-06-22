@@ -11,7 +11,7 @@ const Bar = ({ name }) => {
         className="flex justify-between items-center relative"
         onClick={() => setOpen((prev) => !prev)}
       >
-        <div>Hello, {user}</div>
+        <div>Hello, {name}</div>
         <div className="rounded-full h-12 w-12 flex justify-center items-center bg-slate-300 ml-2 my-1">
           <img
             src={`https://api.dicebear.com/9.x/initials/svg?seed=${name}`}
