@@ -2,6 +2,8 @@
 
 Welcome to the **Payments App**! This full-stack application is built with **React** (frontend) and a **Node.js backend**. It allows users to send money, view their balance, and manage their account settings.
 
+🚀 **Live App**: [https://mypaymentsapp.netlify.app/](https://mypaymentsapp.netlify.app/)
+
 ---
 
 ## 🚀 Features
